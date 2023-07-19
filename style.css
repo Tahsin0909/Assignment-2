@@ -110,7 +110,11 @@
     width: 8em;
     height: 3em;
 }
-
+.banner-btn1:hover{
+    border: 1px solid rgb(173, 160, 160);
+    font-weight: bold;
+    background-color: rgb(249, 61, 124);
+}
 .banner-btn2 {
     border: 1px solid rgb(188, 181, 181);
     border-radius: 48px;
@@ -122,7 +126,11 @@
     width: 8em;
     height: 3em;
 }
-
+.banner-btn2:hover{
+    border: 1px solid rgb(173, 160, 160);
+    font-weight: bold;
+    background-color: #35bdf7
+}
 /* banner */
 /* online games */
 .online-games {
@@ -224,6 +232,40 @@
 .item:hover{
     border: 2px solid rgb(255, 0, 255);
     color:rgb(255, 0, 255) ;
+    font-weight: bold;
+}
+/* footer */
+.primary-btn>img{
+    width: 50px;
+    height: 60px;
+}
+.footer{
+    text-align: center;
+    background-color: #8b5454;
+}
+.primary-display{
+    display: flex;
+    justify-content: center;
+}
+.footer-container{
+    padding: 2%;
+}
+.footer-logo{
+    margin-bottom: 2%;
+}
+.our-story{
+    margin-bottom: 2%;
+    font-size: 1.2em;
+    /* justify-content: space-evenly; */
+    gap: 3%;
+}
+.footer-button{
+    margin-bottom: 2%;
+    gap: 3%;
+}
+.footer-terms{
+    margin-bottom: 1%;
+    gap: 3%;
 }
 @media screen and (max-width:567px) {
 
@@ -261,7 +303,17 @@
     .item-container{
         display: grid;
         grid-template-columns: auto auto auto;
-        margin-left: 2%;
+        margin-left: 0%;
+    }
+    .item{
+        padding: 2px;
+        margin: 0.3%;
+        font-size: 0.6em;
+    }
+    .item>img{
+        
+        width: 40%;
+        
     }
     .play-games-grid-1{
         text-align: center;
@@ -280,4 +332,24 @@
         left: 2%;
         bottom: 100px;
     }
+    .gamer-grid{
+       flex-direction: column;
+       
+       margin-bottom: 3%;
+    }
+    .anchor{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 1%;
+        justify-content: center;
+        align-items: center;
+    }
+    .anchor>ul{
+        flex-direction: column;
+        gap: 10px;
+     align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+   
 }
