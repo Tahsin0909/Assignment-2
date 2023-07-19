@@ -1,0 +1,69 @@
+* {
+    margin: 0px;
+
+}
+
+/* banner section */
+.banner {
+    background-color: #FFF;
+    height: 80%;
+}
+
+.banner-img img {
+    width: 90%;
+    height: 100%;
+}
+
+.banner-grid {
+    display: flex;
+    gap: 20%;
+    align-items: center;
+}
+
+.banner-text {
+    margin-left: 10%;
+    
+}
+
+.goat {
+    font-size: 5em;
+    background-image: linear-gradient(to right, rgb(255, 0, 255), blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+}
+
+.banner-tittle {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.btn-li {
+    list-style: none;
+    margin: 5%;
+    font-size: 2em;
+    color: #534C64;
+}
+
+.banner-btn1 {
+    border: 1px solid rgb(188, 181, 181);
+    border-radius: 48px;
+    background-color: rgb(236, 74, 128);
+    color: #FFF;
+    font-weight: 200;
+    line-height: normal;
+    width: 8em;
+    height: 3em;
+}
+.banner-btn2 {
+    border: 1px solid rgb(188, 181, 181);
+    border-radius: 48px;
+    background-color:  #4EC5F7;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    width: 8em;
+    height: 3em;
+}
