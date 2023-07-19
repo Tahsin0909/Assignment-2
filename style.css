@@ -22,7 +22,7 @@
 
 .banner-text {
     margin-left: 10%;
-    
+
 }
 
 .goat {
@@ -56,14 +56,29 @@
     width: 8em;
     height: 3em;
 }
+
 .banner-btn2 {
     border: 1px solid rgb(188, 181, 181);
     border-radius: 48px;
-    background-color:  #4EC5F7;
+    background-color: #4EC5F7;
     color: #FFF;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
     width: 8em;
     height: 3em;
+}
+
+@media screen and (max-width:567px) {
+
+    .banner-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-text {
+        margin-left: 0%;
+    }
+   
 }
