@@ -69,6 +69,43 @@
     height: 3em;
 }
 
+/* banner */
+/* online games */
+.online-games {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.og-h1-span {
+    background-image: linear-gradient(to right, rgb(255, 0, 255), blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.og-h1 {
+    font-size: 3em;
+}
+.og-img {
+    display: flex;
+    justify-content: center;
+    
+    height: 50%;
+    margin-top: 1%;
+   
+    padding: 0px 100px;
+}
+.og-img-div{
+    
+    text-align: start;
+ 
+}
+.og-img-div>img{
+    width: 90%;
+    height: 100%;
+}
+
+
 @media screen and (max-width:567px) {
 
     .banner-grid {
@@ -80,5 +117,5 @@
     .banner-text {
         margin-left: 0%;
     }
-   
+
 }
