@@ -1,6 +1,10 @@
 * {
     margin: 0px;
-
+    /* overflow: hidden; */
+}
+.navbar{
+    background-image: linear-gradient(to right, rgba(255, 0, 255, 0.516), #495eff);
+    padding: 1%;
 }
 #gamer{
     color: #FF42A5;
@@ -8,6 +12,8 @@
 .logo{
     width: 30px;
     height: 30px;
+    background-color: rgb(0, 255, 102);
+    
 }
 .gamer-2{
     display: flex;
@@ -33,7 +39,8 @@
 .logo-container{
     display: flex;
     gap: 20px;
-    background-color: #cecece;
+    border: 3px solid;
+    border-image: linear-gradient(to right, rgb(255, 0, 255), blue) 1;
     padding: 5px;
 }
 .gamer-2,.gamer-grid,.anchor, .anchor>ul,.logo-container{
@@ -42,17 +49,19 @@
 .gamer-1{
     font-size: 3em;
     font-weight: bolder;
+    color: rgba(19, 19, 19, 0.899);
 }
 .anchor>ul a{
     text-decoration: none;
 }
 .anchor>ul a:hover{
-    color: #FF42A5;
-    border: 2px solid #FF42A5;
+    color: #ffffff;
+    border: 3px solid;
+    border-image: linear-gradient(to right, rgb(255, 0, 255), blue) 1;
 }
 .logo-container> button{
     border: none;
-    background-color:#cecece;
+    background-color:  #495eff;
 }
 .logo-container> button:hover{
     border: 2px solid #FF42A5 ;
@@ -132,6 +141,52 @@
     background-color: #35bdf7
 }
 /* banner */
+/* we are gamer */
+.we-are-gamer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.team-text{
+    text-align: end;
+   
+   width: 30%;
+   margin-right: 2%;
+}
+#team-tittle{
+    background-image: linear-gradient(to left, rgb(255, 0, 255), blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.team-text>button{
+border: 1px solid rgb(188, 181, 181);
+    border-radius: 48px;
+    background-color: #4EC5F7;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    width: 8em;
+    height: 3em;
+    margin-bottom: 3%;
+}
+.team-text>button:hover{
+    border: 1px solid rgb(173, 160, 160);
+    font-weight: bold;
+    background-color: #35bdf7
+}
+
+    .team-context{
+        margin-bottom: 2%;
+    }
+    #team-end-text{
+        color: #2400789f;
+    }
 /* online games */
 .online-games {
     margin-top: 5%;
@@ -164,6 +219,19 @@
     width: 90%;
     height: 100%;
 }
+/* .watch{
+    border: 2px solid red;
+    width: 100px 
+    ;
+    height: 100px;
+    position: relative;
+    left: 15%;
+} */
+#img-1:hover, #img-2:hover, #img-3:hover, #img-4:hover{
+    opacity: 0.7;
+    
+}
+
 .play-games{
     margin-top: 5%;
     display: flex;
@@ -230,7 +298,8 @@
 
 }
 .item:hover{
-    border: 2px solid rgb(255, 0, 255);
+    border: 3px solid;
+    border-image: linear-gradient(to right, rgb(255, 0, 255), blue) 1;
     color:rgb(255, 0, 255) ;
     font-weight: bold;
 }
@@ -238,10 +307,21 @@
 .primary-btn>img{
     width: 50px;
     height: 60px;
+    /* background-color:  #495eff; */
+}
+.primary-btn{
+    background-color: #5d84c6;
+    border: none;
+}
+.primary-btn:hover{
+    border: 3px solid;
+    border-image: linear-gradient(to right, rgb(255, 0, 255), blue) 1;
+    color:rgb(255, 0, 255) ;
 }
 .footer{
     text-align: center;
-    background-color: #8b5454;
+    background-color: #5d84c6;
+    color: white;
 }
 .primary-display{
     display: flex;
@@ -259,6 +339,9 @@
     /* justify-content: space-evenly; */
     gap: 3%;
 }
+.our-story>p:hover{
+    text-decoration:underline;
+}
 .footer-button{
     margin-bottom: 2%;
     gap: 3%;
@@ -266,6 +349,9 @@
 .footer-terms{
     margin-bottom: 1%;
     gap: 3%;
+}
+.footer-terms>p:hover{
+    text-decoration:underline;
 }
 @media screen and (max-width:567px) {
 
@@ -351,5 +437,41 @@
         justify-content: center;
         font-size: 1.2em;
     }
-   
+    .we-are-gamer{
+      flex-direction: column;
+    }  
+    .team-text{
+        text-align: center ;
+       
+       width: 70%;
+       margin-right: 2%;
+    }  
+    .team-img>img{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .primary-display{
+       display: grid;
+       grid-template-columns: auto auto;    
+    }
+    .our-story>p{
+        font-size: 1em;
+        text-align: start;
+        /* border: 2px solid red; */
+        margin-bottom: 5%;
+    }
+    .footer-button{
+        margin-top: 7%;
+        margin-bottom: 7%;
+        gap: 3%;
+        
+    }
+    .footer-terms{
+        /* border: 2px solid red; */
+        margin-bottom: 5%;
+    }
+    .footer-terms>p{
+        /* border: 2px solid green; */
+        margin: 4%;
+    }
 }
